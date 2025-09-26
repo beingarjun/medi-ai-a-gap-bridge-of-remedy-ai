@@ -1,18 +1,20 @@
-app.use('/prescriptions', require('./prescriptions'));
+
 const express = require('express');
 const { db, init } = require('./db');
 const app = express();
 const PORT = process.env.PORT || 4000;
 
 // Initialize SQLite tables
+
 init();
+
 
 // Mount routes
 app.use(express.json());
+app.use('/prescriptions', require('./prescriptions'));
 app.use('/auth', require('./auth'));
 app.use('/otp', require('./otp'));
 app.use('/insurance', require('./insurance'));
-
 app.use('/adherence', require('./adherence'));
 app.use('/interactions', require('./interactions'));
 app.use('/clinical', require('./clinical'));
