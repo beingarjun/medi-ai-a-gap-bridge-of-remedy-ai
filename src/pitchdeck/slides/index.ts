@@ -1,0 +1,13 @@
+export { default as MarketAnalysis } from './MarketAnalysis';
+export { default as GapAnalysis } from './GapAnalysis';
+export { default as TAMSlide } from './TAMSlide';
+export { default as SAMSlide } from './SAMSlide';
+export { default as SOMSlide } from './SOMSlide';
+export { default as Financials } from './Financials';
+export { default as FundRaising } from './FundRaising';
+export { default as Runway } from './Runway';
+export { default as Team } from './Team';
+export { default as Stack } from './Stack';
+export { default as EBITDA } from './EBITDA';
+export { default as FeaturesPrediction } from './FeaturesPrediction';
+export { default as Scalability } from './Scalability';

@@ -64,6 +64,7 @@ export default function App() {
         <IntegrationsDemo />
       </section>
 
+
       <footer style={{marginTop:32,paddingTop:16,borderTop:'1px solid #e3e8ee',textAlign:'center',fontSize:14,color:'#888'}}>
         &copy; {new Date().getFullYear()} Medi.ai &mdash; <a href="mailto:info@medi.ai" style={{color:'var(--primary)'}}>Contact Us</a> &nbsp;|&nbsp; <a href="https://medi.ai" style={{color:'var(--primary)'}}>Website</a>
       </footer>
