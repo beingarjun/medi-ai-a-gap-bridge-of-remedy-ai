@@ -1,6 +1,40 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background: #f8f9fa;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  background: #f4f8fb;
+  color: #1a2a36;
+}
+
+a {
+  color: #1a7f62;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #145c47;
+}
+
+nav {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  border-radius: 0 0 8px 8px;
+}
+
+h1, h2, h3 {
+  color: #1a7f62;
+  font-weight: 700;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  padding: 2rem;
 }
