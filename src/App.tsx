@@ -1,9 +1,8 @@
+import './App.css';
 import CustomerManagement from './components/CustomerManagement';
 import PharmacyManagement from './components/PharmacyManagement';
 import CustomerProfile from './components/CustomerProfile';
 import PharmacyProfile from './components/PharmacyProfile';
-          <Route path="/customers" element={<CustomerManagement />} />
-          <Route path="/pharmacies" element={<PharmacyManagement />} />
 import Telemedicine from './components/Telemedicine';
 // ...existing code...
 
@@ -38,40 +37,33 @@ const mainStyle: React.CSSProperties = {
 };
 
 
+
 const App = () => (
   <Router>
     <div style={layoutStyle}>
       <Sidebar />
       <main style={mainStyle}>
-            <Routes>
-              <>
-                <Route path="/" element={<Dashboard />} />
-                <Route path="/prescriptions" element={<PrescriptionManagement />} />
-                <Route path="/insurance" element={<InsuranceBilling />} />
-                <Route path="/adherence" element={<MedicationAdherence />} />
-                <Route path="/clinical" element={<ClinicalServices />} />
-                <Route path="/operations" element={<Operations />} />
-                <Route path="/outreach" element={<ProactiveOutreach />} />
-                <Route path="/ai-agent" element={<AIAgent />} />
-                <Route path="/analytics" element={<Analytics />} />
-                <Route path="/compliance" element={<Compliance />} />
-                <Route path="/telemedicine" element={<Telemedicine />} />
-              </>
-            </Routes>
-              <>
-                <Route path="/" element={<Dashboard />} />
-                <Route path="/prescriptions" element={<PrescriptionManagement />} />
-                <Route path="/insurance" element={<InsuranceBilling />} />
-                <Route path="/adherence" element={<MedicationAdherence />} />
-                <Route path="/clinical" element={<ClinicalServices />} />
-                <Route path="/operations" element={<Operations />} />
-                <Route path="/outreach" element={<ProactiveOutreach />} />
-                <Route path="/ai-agent" element={<AIAgent />} />
-                <Route path="/analytics" element={<Analytics />} />
-                <Route path="/compliance" element={<Compliance />} />
-                <Route path="/telemedicine" element={<Telemedicine />} />
-                <Route path="/customers" element={<CustomerManagement />} />
-                <Route path="/customers/:id" element={<CustomerProfile />} />
-                <Route path="/pharmacies" element={<PharmacyManagement />} />
-                <Route path="/pharmacies/:id" element={<PharmacyProfile />} />
-              </>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/prescriptions" element={<PrescriptionManagement />} />
+          <Route path="/insurance" element={<InsuranceBilling />} />
+          <Route path="/adherence" element={<MedicationAdherence />} />
+          <Route path="/clinical" element={<ClinicalServices />} />
+          <Route path="/operations" element={<Operations />} />
+          <Route path="/outreach" element={<ProactiveOutreach />} />
+          <Route path="/ai-agent" element={<AIAgent />} />
+          <Route path="/analytics" element={<Analytics />} />
+          <Route path="/compliance" element={<Compliance />} />
+          <Route path="/telemedicine" element={<Telemedicine />} />
+          <Route path="/customers" element={<CustomerManagement />} />
+          <Route path="/customers/:id" element={<CustomerProfile />} />
+          <Route path="/pharmacies" element={<PharmacyManagement />} />
+          <Route path="/pharmacies/:id" element={<PharmacyProfile />} />
+        </Routes>
+      </main>
+    </div>
+  </Router>
+
+);
+
+export default App;

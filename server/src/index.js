@@ -1,5 +1,3 @@
-app.use('/customers', require('./customers'));
-app.use('/pharmacies', require('./pharmacies'));
 
 const express = require('express');
 const { db, init } = require('./db');
@@ -13,6 +11,8 @@ init();
 
 // Mount routes
 app.use(express.json());
+app.use('/customers', require('./customers'));
+app.use('/pharmacies', require('./pharmacies'));
 app.use('/prescriptions', require('./prescriptions'));
 app.use('/auth', require('./auth'));
 app.use('/otp', require('./otp'));
