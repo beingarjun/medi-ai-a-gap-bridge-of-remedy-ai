@@ -1,3 +1,5 @@
+app.use('/customers', require('./customers'));
+app.use('/pharmacies', require('./pharmacies'));
 
 const express = require('express');
 const { db, init } = require('./db');

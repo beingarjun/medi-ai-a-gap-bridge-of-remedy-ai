@@ -37,7 +37,9 @@ const Sidebar = () => {
   return (
     <aside style={sidebarStyle}>
       <h2 style={{marginBottom: '2rem', fontWeight: 800, fontSize: '1.5rem', letterSpacing: '1px'}}>Medi.AI</h2>
-      <Link to="/" style={{...linkStyle, ...(location.pathname === '/' ? activeLinkStyle : {})}}>Dashboard</Link>
+  <Link to="/" style={{...linkStyle, ...(location.pathname === '/' ? activeLinkStyle : {})}}>Dashboard</Link>
+  <Link to="/customers" style={{...linkStyle, ...(location.pathname === '/customers' ? activeLinkStyle : {})}}>Customers</Link>
+  <Link to="/pharmacies" style={{...linkStyle, ...(location.pathname === '/pharmacies' ? activeLinkStyle : {})}}>Pharmacies</Link>
       <Link to="/prescriptions" style={{...linkStyle, ...(location.pathname === '/prescriptions' ? activeLinkStyle : {})}}>Prescriptions</Link>
       <Link to="/insurance" style={{...linkStyle, ...(location.pathname === '/insurance' ? activeLinkStyle : {})}}>Insurance</Link>
       <Link to="/adherence" style={{...linkStyle, ...(location.pathname === '/adherence' ? activeLinkStyle : {})}}>Adherence</Link>
